@@ -18,7 +18,22 @@ python> theta = lr.gradDescent(dataset, labels)
 ```
 $ python logisticRegression.py {datasetfilename} {separator}
 ```
-- *more to follow*
+
+- Perceptron 
+
+   * single layer neural network
+
+- Multi layer perceptron
+
+   * multi layer neural network (one hidden + one output)
+
+```
+python> import mlp
+python> from numpy import *
+python> inputs = array(([[0,0],[0,1],[1,0],[1,1]]))
+python> targets = array(([0],[1],[1],[0]))
+python> mlp.train(inputs, targets, 2, 1, 0.25, 1000) # n_hidden, n_output, eta, n_iterations
+```
 
 
 -- Edited by http://dillinger.io/ -- 
